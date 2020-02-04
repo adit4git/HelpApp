@@ -1,6 +1,10 @@
 {
   "name": "help",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adit4git/HelpApp.git"
+ },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
