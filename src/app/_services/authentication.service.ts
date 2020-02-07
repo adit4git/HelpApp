@@ -27,7 +27,6 @@ export class AuthSvc {
     return this.http.post<any>('${environment.apiURL}/users/authenticate', { username, password })
     .pipe(map(user => {
       if (user && user.token) {
-
         localStorage.setItem('currentUser', JSON.stringify(user));
         this.currentUserSubject.next(user);
       }
